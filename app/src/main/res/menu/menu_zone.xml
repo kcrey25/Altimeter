@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.casey.altimeter.Zone">
+
+    <item
+        android:id="@+id/home_btn"
+        android:icon="@mipmap/home"
+        android:orderInCategory="100"
+        android:title="Home"
+        app:showAsAction="always" />
+
+</menu>

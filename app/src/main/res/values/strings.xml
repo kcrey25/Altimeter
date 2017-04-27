@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Altimeter</string>
+    <string name="action_settings">Settings</string>
+    <string name="nameColTxt">Name</string>
+    <string name="elevationColTxt">Elevation</string>
+    <string name="actionColTxt">Action</string>
+    <string name="title_activity_current__elevation">Current Elevation</string>
+    <string name="title_activity_zone_landing">Measurements</string>
+    <string name="title_activity_altimeter">Projects</string>
+    <string name="title_activity_project">Locations on Site</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_mapping">Mapping</string>
+</resources>

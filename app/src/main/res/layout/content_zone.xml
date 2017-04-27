@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.casey.altimeter.Zone"
+    tools:showIn="@layout/activity_zone"
+    android:clickable="false">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:layout_weight="1">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/measurementTable">
+
+            <TableRow
+                android:id="@+id/columnTitles"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:background="#33cc33">
+
+                <TextView
+                    android:id="@+id/nameCol"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/nameColTxt"
+                    android:paddingLeft="15sp"
+                    android:textSize="24sp"
+                    android:layout_column="0">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/elevationCol"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:paddingLeft="12sp"
+                    android:text="@string/elevationColTxt"
+                    android:textSize="24sp"
+                    android:layout_column="1"
+                    android:layout_margin="3sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/actionCol"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="@string/actionColTxt"
+                    android:textSize="24sp"
+                    android:layout_column="2"
+                    android:layout_margin="3sp"
+                    android:gravity="center"
+                    android:paddingRight="15sp">
+                </TextView>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5sp"
+        android:background="@mipmap/add"
+        android:onClick="addClick"
+        android:padding="10sp" />
+
+    <ImageView
+        android:layout_width="45sp"
+        android:layout_height="45sp"
+        android:id="@+id/view_map_btn"
+        android:src="@android:drawable/ic_dialog_map"
+        android:layout_alignParentEnd="false"
+        android:clickable="true"
+        android:onClick="mapViewClick"
+        android:adjustViewBounds="true"
+        android:background="#081a81"
+        android:layout_alignParentStart="false"
+        android:padding="10sp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="true"
+        android:baselineAlignBottom="false"
+        android:layout_alignTop="@+id/add_btn"
+        android:layout_marginRight="3sp" />
+
+
+</RelativeLayout>

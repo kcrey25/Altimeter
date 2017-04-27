@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.casey.altimeter.Current_Elevation"
+    tools:showIn="@layout/activity_current__elevation">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="179sp"
+        android:background="#009933"
+        android:id="@+id/tableRow">
+        <TextView
+            android:id="@+id/blank"
+            android:textSize="35sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:text=" "/>
+
+        <TextView
+            android:id="@+id/curElev"
+            android:textSize="35sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="50" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="120sp"
+        android:layout_height="80sp"
+        android:background="@mipmap/save"
+        android:onClick="saveClick"
+        android:layout_marginTop="43sp"
+        android:layout_below="@+id/tableRow"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_above="@+id/tableRow"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/save_btn"
+        android:layout_alignStart="@+id/save_btn" />
+</RelativeLayout>
